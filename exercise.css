@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*headerコンテナーの設定はあってる*/
+.heading {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #ff00ff;
+}
+/*ここの設定もあってる*/
+.heading > :first-child {
+  margin-right: auto;
+}
+
+/*ここにクラス名つけずに＞をつかって
+直下の要素につけるという設定をしている。
+設定はあってる*/
+.heading-box {
+  flex-basis: 140px;
+  height: 70px;
+  background-color: #fbb3ff;
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+  /*上記とjustify-content: centerのみで
+  下２つは不要*/
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*ここはあってる*/
+.side-main {
+  width: 300px;
+  background-color: #d8ffb6;
+}
+
+.main-box {
+  max-width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: #00b522;
+  /*上記とjustify-content: center;が入ってる*/
+}
+
+/*ここも＞を使って記載。内容はあってる*/
+.box {
+  background-color: #fff75a;
+  flex-basis:200px;
+  height: 130px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #52a1ff;
+  padding: 20px;
+  /*width不要*/
+  width: 100%;
+  /*display: flex;
+    flex-wrap: wrap
+    justify-content: center;
+    入ってる*/
+}
+
+/*.fooer、.footer2の記載なし*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*ここも＞使って記載中身は*/
+.footer-box {
+  background-color: #b6e7ff;
+  flex-basis: 45%;
+  max-width: 600px;
+  margin: 10px;
+  height: 40px;
+}
